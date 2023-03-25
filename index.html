@@ -13,12 +13,22 @@
         <img src="Assets/CHAEL-1.jpg" alt="">
     </div>
     <div class="container">
-        <h1>Rock Paper Scissors</h1>
-	    <p>Choose your move:</p>
-	    <button onclick="play('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
-	    <button onclick="play('paper')"><i class="fa-solid fa-hand"></i></button>
-	    <button onclick="play('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
+	    <h1>Rock Paper Scissors</h1>
+        <div id="history"></div>
+        <div id="game">
+            <div class="player-box">
+                <h2>You</h2>
+	            <button onclick="play('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+	            <button onclick="play('paper')"><i class="fa-solid fa-hand"></i></button>
+	            <button onclick="play('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
+            </div>
+            <div class="computer-box">
+                <h2>Computer</h2>
+                <p id="computer-choice"></p>
+            </div>
+        </div>
 	    <p id="result"></p>
+        <button onclick="del_btn()">Del History</button>
     </div>
     <div class="footer">
         <p>© 2023 Jhon Michael Babadilla</p>

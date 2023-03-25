@@ -1,6 +1,6 @@
 * {
     overflow-x: hidden;
-    overflow-y: hidden;
+    
 }
 body {
 	font-family: Arial, sans-serif;
@@ -24,6 +24,21 @@ body {
 
 h1 {
 	color: #17252A;
+}
+
+#history {
+  margin-bottom: 20px;
+}
+
+#game {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-box,
+.computer-box {
+  width: 40%;
+  text-align: center;
 }
 
 .buttons {
@@ -55,14 +70,17 @@ button:hover {
 }
 
 .footer p{
-    margin-top: 20%;
+    margin-top: 13%;
     text-align: center;
     color: #fff;
   }
 
   @media screen and (max-width:430px) {
     .footer p{
-      margin-top: 75%;
+      margin-top: 25%;
       
     } 
+    button {
+      margin-top: 3px;
+    }
   }
